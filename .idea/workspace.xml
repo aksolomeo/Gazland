@@ -10,9 +10,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="projectt" />
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>label</find>
@@ -20,12 +17,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2578" />
-    <option name="height" value="1408" />
   </component>
   <component name="ProjectId" id="1dckVDMjZn08pEOQDNDAhnzGQKm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -130,6 +121,7 @@
       <workItem from="1481498051441" duration="1472000" />
       <workItem from="1481504723094" duration="598000" />
       <workItem from="1592731795998" duration="172000" />
+      <workItem from="1592732097264" duration="804000" />
     </task>
     <servers />
   </component>
@@ -177,22 +169,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="66" key="#app.js/0.0.1536.824@0.0.1536.824" timestamp="1592731915891" />
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1592731967090">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1592732192409">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592731967090" />
-    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1592731967090">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592732192409" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1592732192408">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592731967090" />
-    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1592731967089">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592732192408" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1592732192407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592731967089" />
-    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1592731967090">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592732192407" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1592732192408">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592731967090" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592732192408" />
     <state x="486" y="221" key="jetbrains.nodejs.interpreters-dialog" timestamp="1592731914567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
