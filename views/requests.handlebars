@@ -1,0 +1,112 @@
+<header>
+    <div class="mainnav container navbar navbar-defult">
+        <a class="logo" href="http://gazland.ee/"><img src="image/logo.png"></a>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="pull-right "><a href="/approvals">Approvals</a></li>
+            <li class="pull-right active"><a href="/requests">Requests</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="fading" class="container">
+    <table id="gazlandCustomers" class="table table-striped table-responsive table-bordered">
+        <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Car</th>
+            <th>Desired date</th>
+            <th>Confirmation</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each reservations}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.brand}} {{this.model}}</td>
+                <td>{{this.desiredDate}}</td>
+                <td><a data-toggle="modal" data-target="#{{this._id}}">Review request</a></td>
+            </tr>
+            <div class="modal fade" id="{{this._id}}" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                            <span class="header">Details</span>
+                            <span class="modal-element">Request of {{this.name}}</span>
+                        </div>
+                        <div class="modal-body">
+                            <ol class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <ul class="list-unstyled well ">
+                                        <li>
+                                            <label>Car</label><span
+                                                class="modal-element">{{this.brand}} {{this.model}}</span>
+                                        </li>
+                                        <li>
+                                            <label>Release date</label><span
+                                                class="modal-element">{{this.releaseDate}}</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-inline-item">
+                                    <ul class="list-unstyled well ">
+                                        <li>
+                                            <label>Engine type</label><span
+                                                class="modal-element">{{this.engineType}}</span>
+                                        </li>
+                                        <li>
+                                            <label>Engine power</label><span
+                                                class="modal-element">{{this.enginePower}}</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-inline-item">
+                                    <ul class="list-unstyled well">
+                                        <li>
+                                            <label>Email</label><span class="modal-element"
+                                                                      id="email">{{this.email}}</span>
+                                        </li>
+                                        <li>
+                                            <label>Phone number</label><span
+                                                class="modal-element">{{this.phone}}</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-inline-item">
+                                    <ul class="list-unstyled well">
+                                        <li>
+                                            <label>Suggested date</label><span class="modal-element">{{this.desiredDate}}</span>
+                                        </li>
+                                        <li>
+                                            <label>Confirmed date</label><span class="modal-element selectedDate"><button
+                                                class="btn-default selectedDate">{{this.desiredDate}}</button></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <span class="comment">Comment</span><span class="comment-text">{{this.comments}}</span>
+                        </div>
+                        <div class="modal-footer">
+                            <a id="cancel" type="submit" data-dismiss="modal">
+                                <button class="pull-left modal-button btn-primary modal-button-cancel">Cancel</button>
+                            </a>
+                            <a id="delete" type="submit" data-dismiss="modal">
+                                <button class="pull-left modal-button btn-primary modal-button-deny">Delete</button>
+                            </a>
+                            <a id="approve" type="submit">
+                                <button class="pull-right modal-button btn-primary modal-button-approve">Approve</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+    setLocation('requests');
+</script>

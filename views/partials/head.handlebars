@@ -1,0 +1,46 @@
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- styles -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- style for 'pignoseCalendar' -->
+<link href="css/pignose.calendar.css" rel="stylesheet">
+
+<!-- scripts for 'pignoseCalendar' -->
+<script src="js/form/calendar/moment.js" charset="utf-8"></script>
+<script src="js/form/calendar/pignose.calendar.js" charset="utf-8"></script>
+
+{{#if isForm}}
+
+    <!-- script for form -->
+    <script src="js/form/init.js" charset="utf-8"></script>
+
+    <!-- script for 'pignoseCalendar' -->
+    <script src="js/form/calendar/init.js" charset="utf-8"></script>
+
+{{else}}
+
+    <!-- script for modality -->
+    <script src="js/modal.js" charset="utf-8"></script>
+
+    <!-- style for 'dataTable' -->
+    <link href='https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css' rel="stylesheet">
+
+    <!-- scripts for 'dataTable' -->
+    <script src='https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js'></script>
+
+    <!-- script for initializing 'dataTable' -->
+    <script>
+        $(document).ready(function() {
+            $('#gazlandCustomers').DataTable({
+                responsive: true
+            });
+        });
+    </script>
+
+{{/if}}

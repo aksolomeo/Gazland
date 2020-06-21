@@ -1,0 +1,51 @@
+[{
+    "name": "fname",
+    "label": "Firstname",
+    "placeholder": "Please enter your firstname",
+    "type": "text"
+}, {
+    "name": "lname",
+    "label": "Lastname",
+    "placeholder": "Please enter your lastname",
+    "type": "text"
+}, {
+    "name": "brand",
+    "label": "Car brand",
+    "placeholder": "Please enter brand of your car",
+    "type": "text"
+}, {
+    "name": "model",
+    "label": "Car model",
+    "placeholder": "Please enter model of your car",
+    "type": "text"
+}, {
+    "name": "releaseDate",
+    "label": "Release date",
+    "placeholder": "Please enter release date of your car",
+    "type": "number"
+}, {
+    "name": "engineType",
+    "label": "Engine Type",
+    "placeholder": "Please enter amount of cylinders in your car",
+    "type": "number"
+}, {
+    "name": "enginePower",
+    "label": "Engine power (kw)",
+    "placeholder": "Please enter the engine power of your car",
+    "type": "number"
+}, {
+    "name": "phone",
+    "label": "Phone",
+    "placeholder": "Please enter your phone number",
+    "type": "tel"
+}, {
+    "name": "email",
+    "label": "Email",
+    "placeholder": "Please enter your email",
+    "type": "email"
+}, {
+    "name": "desiredDate",
+    "label": "Desired date",
+    "placeholder": "Choose a date",
+    "type": "date"
+}]

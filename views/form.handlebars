@@ -1,0 +1,55 @@
+<header>
+    <div class="mainnav container navbar navbar-defult">
+        <a class="logo" href="http://gazland.ee/"><img src="image/logo.png"></a>
+    </div>
+    <div class="container page-header"></div>
+</header>
+
+<div id="fading">
+    <div class="container">
+        <form method="post" action="/reservation">
+            {{{alert alertMessage}}} {{{formSetup}}}
+
+            <div class="row">
+                <div class="form-group col-md-12 col-sm-12">
+                    <label class="control-label" for="email">Comment</label>
+                    <div class="badge pull-right">
+                        <span id="characterCount">0</span>/150
+                    </div>
+                    <textarea class="form-control" rows="3" maxlength="150" name="comments" placeholder="Additional comments..."></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-12 col-sm-12">
+                    <button class="btn btn-primary " type="submit">Reserve</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="col-xs-4">
+            <h4>Talltrans OÜ</h4>
+            <ul class="list-unstyled">
+                <li>Betooni 3a, Tallinn</li>
+            </ul>
+        </div>
+        <div class="col-xs-4">
+            <h4>Contact</h4>
+            <ul class="list-unstyled">
+                <li>Phone number: +372 5805 8455</li>
+                <li>E-mail: <a href="mailto:info@gazland.ee">info@gazland.ee</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-4">
+            <h4>Services</h4>
+            <ul class="list-unstyled">
+                <li>Gas equipment installation</li>
+                <li>Car service and maintenance</li>
+            </ul>
+        </div>
+    </div>
+</footer>
